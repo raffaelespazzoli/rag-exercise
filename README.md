@@ -26,7 +26,8 @@ with ollama directly:
 ```sh
 curl http://localhost:11434/api/generate -d '{
   "model": "llama2",
-  "prompt":"What is the best way to organize an environment as a service experience in a Kubernetes or Openshift environment?"
+  "prompt":"What is the best way to organize an environment as a service experience in a Kubernetes or Openshift environment?",
+  "stream": false
 }'
 ```
 
