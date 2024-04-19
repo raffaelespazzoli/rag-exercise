@@ -9,6 +9,13 @@
 
 # running the project
 
+If you are using podman you have to enable expose the Docker socket:
+
+```
+systemctl --user enable --now podman.socket
+export DOCKER_HOST=unix://$(podman info --format '{{.Host.RemoteSocket.Path}}')
+```
+
 ```
 quarkus dev
 ```
