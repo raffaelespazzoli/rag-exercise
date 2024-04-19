@@ -48,7 +48,9 @@ public class ArticleIngestor {
       throws UnsupportedEncodingException, IOException, URISyntaxException {
 
     List<String> articleURLs=findAllArticles();    
-
+ 
+    articleURLs.remove("https://www.redhat.com/en/blog/kubernetes-operators-best-practices");
+    
     System.out.println(articleURLs.toString());
     System.out.println(articleURLs.size());
 
